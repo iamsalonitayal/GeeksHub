@@ -251,25 +251,14 @@ footer{
     padding:25px;
     bottom:0;
 }
-footer ul{
-    float:right;
-    list-style: none;
-    margin:0px;
-    font-size:10px;
-    font-weight:100;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-footer ul li{
-    display:inline-block;
-    margin:0px;
-}
-footer ul li a{
+footer a{
     text-decoration:none;
     color:#fff;
     padding:5px 10px;
     font-family:sans-serif;
     letter-spacing:1px;
+    margin:center;
 }
-footer ul li a:hover{
+footer a:hover{
     background:lightgray;
 }
