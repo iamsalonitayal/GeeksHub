@@ -1,0 +1,157 @@
+
+<html>
+    <head>
+        <title>GeeksHub</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="geeksHub.css" rel="stylesheet" type="text/css">
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body style="width:100%;height:100%;">
+        
+        <header>
+        <div class="imgbg">
+            
+        <!--For Adding Video
+        <div class="videobck">
+            <video autoplay loop class="video-background" muted plays-inline>
+                <source src = "tech.mp4" type="video/mp4">
+            </video>-->
+            
+            <nav class="navbar navbar-default navbar-inverse-fixed-top navbar-shrink" id="navbar">
+                    <div class="container-fluid">
+                      <button type="button" class="navbar-toggle"
+                      data-toggle = "collapse"
+                      data-target = ".navbar-collapse">
+                      <span class = "sr-only">Toggle navigation</span>
+                      <span class = "icon-bar"></span>
+                      <span class = "icon-bar"></span>
+                      <span class = "icon-bar"></span>
+                      </button> 
+                       <a class="navbar-brand" href="#" id="title">GeeksHub</a>
+                       <div class = "navbar-collapse collapse">
+                         <ul class = "nav navbar-nav navbar-right" id="menu">
+                           <li class = "default"><a href = "#trending">Trending</a>
+                           </li>
+                           <li class = "default"><a href = "#">Blogs</a>
+                           </li>
+                           <li class = "dropdown">
+                             <a href = "#" class = "dropdown-toggle"
+                             data-toggle = "dropdown" id="dropbtn">Skills<b class = "caret"></b>
+                             <ul class = "dropdown-menu">
+                                    <li class = "dropdown-header"  style="color:rgb(41, 40, 40);size:18px" ></li>
+                                    <li><a href = "#" style="color:rgb(41, 40, 40)"  id="ml">Machine Learning</a></li>
+                                    <li><a href = "#" style="color:rgb(41, 40, 40)">Cloud Computing</a></li>
+                                    <li><a href = "#" style="color:rgb(41, 40, 40)">Blockchain</a></li>
+                                    <li><a href = "#" style="color:rgb(41, 40, 40)">Website Deveopment</a></li>
+                           </li>
+                         </ul>
+                       </div>
+                    </div>
+                </nav>
+           
+            <div class="msg">
+                <h1>Curious About What We Are?</h1>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:8%;border-radius: 25px;" class="btn btn1">Sign Up</button>
+                <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <form class="modal-content" action="/action_page.php">
+                          <div class="container">
+                            <h2 style="color:rgb(4, 34, 39);">Sign Up</h2>
+                            <hr>
+                            <label for="email" style="color:rgb(4, 34, 39);"></label>
+                            <input type="text" placeholder="Enter Valid Email Address" name="email" required>
+                      
+                            <label for="psw" style="color:rgb(4, 34, 39);"><b></b></label>
+                            <input type="password" placeholder="Enter a Strong Password" name="psw" required>
+    
+                            <!-- Remember me <label>
+                              <p style="color:rgb(4, 34, 39);">Remember me</p>
+                              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:13px;">
+                            </label>-->
+
+                            <p style="color:black;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                      
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                              <button type="submit" class="signupbtn">Sign Up</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      
+                      <script>
+                      // Get the modal
+                      var modal = document.getElementById('id01');
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      }
+                      </script>
+                <button  style="width:8%;border-radius: 25px;" class="btn btn2">Explore</button>
+            </div>
+        </header>
+       
+           <div class="content">
+           </div>
+           <script>
+                window.onscroll = function(){myFunction()};
+                var nav = document.getElementById("nav");
+                var sticky = nav.offsetTop;
+
+                function myFunction()
+                {
+                if(window.pageYOffset >= sticky)
+                {
+                     nav.classList.add("sticky")
+                }else
+                {
+                     nav.classList.remove("sticky");
+                }
+                }
+           </script>
+        </div>
+        <pre><h2 style="color:darkslategray;background: transparent;" id="trending"> Trending</h2></pre>
+        <div class="w3-container">
+            
+            <div class="w3-Dark Gray w3-round-xlarge">
+                <div class="w3-container w3-Teal w3-round-xlarge" style="width:84%">Machine Learning - 84%</div>
+                <br>
+                <div class="w3-Dark Gray w3-round-xlarge">
+                        <div class="w3-container w3-Teal w3-round-xlarge" style="width:77%">Cloud Computing - 77%</div>
+                        <br>
+                </div>
+                <div class="w3-Dark Gray w3-round-xlarge">
+                        <div class="w3-container w3-Teal w3-round-xlarge" style="width:58%">Blockchain Technology - 58%</div>
+                        <br>
+                </div>
+                <div class="w3-Dark Gray w3-round-xlarge">
+                        <div class="w3-container w3-Teal w3-round-xlarge" style="width:40%">Website Development - 40%</div>
+                        <br>
+                </div>
+            </div>
+         </div>
+
+        <footer>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div style="text-align: center;">
+                    <a style="color:rgb(10, 130, 146);font-size:10px;text-decoration:none;"  href="https://github.com/salonitayal" target="_blank"> Saloni Tayal </a><p style="color:darkslategray;font-size:10px;display: inline">&copy; 2019</p>
+                </div>
+                
+        </footer>
+    </body>
+
+</html>

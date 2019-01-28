@@ -1,0 +1,315 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+/*.video-background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    height:auto;
+    z-index: -100;
+    background-size: cover;
+
+}
+@media (min-aspect-ratio:16/9){
+    .video-background{
+        width:100%;
+        height:auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .video-background{
+        width:auto;
+        height:100%;
+    }
+}
+.videobck{
+    height:100%;
+    width:100%;
+}*/
+.imgbg{
+    background: url("i3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header{
+    background:transparent;
+    /*height:100vh;*/
+    font-weight:600;
+
+}
+#navbar{
+    background:transparent;
+    height:80px;
+    border:none;
+
+}
+#title{
+    color:whitesmoke;
+    font-size:45px;
+    font-weight:600;
+    margin-top:15px;
+    padding:5px;
+    text-decoration:none; 
+}
+#menu{
+    float:right;
+    list-style: none;
+    margin:20px;
+    font-size:23px;
+    font-weight:400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#menu li{
+    display:inline-block;
+    margin:8px 5px;
+}
+#menu li a{
+    text-decoration:none;
+    color:#fff;
+    padding:5px 10px;
+    font-family:sans-serif;
+    letter-spacing:2px;
+}
+#menu li a:hover{
+    background:lightgray;
+    transition: 0.4s;
+}
+#dropbtn{
+    font-family: Comic Sans Ms;
+    font-size:23px;
+    color:whitesmoke;
+    opacity:0.6;
+}
+/*#dropbtn ul{
+    font-size:16px;
+    border:none;
+    outline:none;
+    color:darkgray;
+
+    background-color:inherit;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+}*/
+#dropbtn:hover{
+    background-color:white;
+    color:black; 
+}
+
+.msg{
+    position: relative;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    top:200px;
+    font-weight: 900;
+
+}
+.msg h1{
+    font-size:60px;
+    margin:25px;
+}
+.btn{
+    font-size:18px;
+    color:white;
+    letter-spacing:2px;
+    margin:5px;
+    padding:7px 28px;
+    text-decoration:none;
+    border:1px solid whitesmoke;
+    border-radius:25px;
+
+}
+.btn1{
+    background:whitesmoke;
+    color:rgb(10, 130, 146);
+}
+.btn2{
+    background:transparent;
+    color:white;
+}
+.btn1:hover{
+    background:rgb(10, 130, 146);
+    color:white;
+}
+.btn2:hover{
+    background:rgb(10, 130, 146);
+    transition:0.4s;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    color:rgb(51, 49, 49);
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    color:rgb(51, 49, 49);
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: rgb(10, 130, 146);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #474e5d;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 80%;
+    }
+  
+footer{
+    width:100%;
+    height:10px;
+    background-color:rgb(18, 19, 19);
+    padding:25px;
+    bottom:0;
+}
+footer ul{
+    float:right;
+    list-style: none;
+    margin:0px;
+    font-size:10px;
+    font-weight:100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+footer ul li{
+    display:inline-block;
+    margin:0px;
+}
+footer ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:5px 10px;
+    font-family:sans-serif;
+    letter-spacing:1px;
+}
+footer ul li a:hover{
+    background:lightgray;
+}
+   
+/*.progressbar{
+    background: whitesmoke;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+.progress:after{
+    content:'';
+    display:block;
+    background:rgb(10, 130, 146);
+    widows: 50%;
+    height:100%;
+    border-radius:9px;
+}
+
+.content {
+padding: 16px;
+}
+  
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+  
+.sticky + .content {
+padding-top: 60px;
+ }*/
